@@ -16,6 +16,14 @@
           "WebApi.dll": {}
         }
       },
+      "Dapper/2.1.89": {
+        "runtime": {
+          "lib/net10.0/Dapper.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.89.60231"
+          }
+        }
+      },
       "Microsoft.Extensions.DependencyInjection.Abstractions/10.0.0": {
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
@@ -48,6 +56,7 @@
       },
       "Application/1.0.0": {
         "dependencies": {
+          "Dapper": "2.1.89",
           "Domain": "1.0.0",
           "Npgsql": "10.0.3"
         },
@@ -73,6 +82,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Dapper/2.1.89": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1VjFE664wnxvuhlgP8kS4PeFFF4jqD3VkbIHW6Zlc52zuibgcz5ICnIHcQXlTp6pURpPNGLV0ZpNe5x9KePJnA==",
+      "path": "dapper/2.1.89",
+      "hashPath": "dapper.2.1.89.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/10.0.0": {
       "type": "package",

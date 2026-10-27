@@ -18,6 +18,12 @@ while (true)
 9 - Update product
 10 - Delete product
 11 - Get products by category
+12 - Get amount of products
+13 - Get amount of categories
+14 - Get amount of products by category
+15 - Get minimum price of products by category
+16 - Get maximum price of products by category
+17 - Get average price of products by category
 0 - Exit.");
     var a = Console.ReadLine();
     System.Console.WriteLine("===============================");
@@ -68,7 +74,7 @@ while (true)
             break;
 
         case "6":
-        var products = productRepo.GetCategories();
+        var products = productRepo.GetProducts();
         foreach (var item in products)
         {
             Console.WriteLine($"{item.Id} - {item.Name} - {item.Price} - Category ID: {item.CategoryId}");
@@ -148,6 +154,42 @@ while (true)
                 $"{item.Id} - {item.Name} - {item.Price}");
         }
         break;
+
+        case "12":
+            productRepo.GetAmountOfProducts();
+            break;
+
+        case "13":
+            var amountOfCategories = categoryRepo.GetAmountOfCategories();
+            Console.WriteLine($"Total number of categories: {amountOfCategories}");
+            break;
+
+        case "14":
+            Console.Write("Enter category id: ");
+            var categoryIdForProductCount = Convert.ToInt32(Console.ReadLine());
+            productRepo.GetAmountOfProductsByCategory(categoryIdForProductCount);
+            break;
+
+        case "15":
+            Console.Write("Enter category id: ");
+            var categoryIdForMinPrice = Convert.ToInt32(Console.ReadLine());
+            var minPrice = productRepo.GetMinPriceOfProductByCategory(categoryIdForMinPrice);
+            Console.WriteLine($"Minimum price of products in category {categoryIdForMinPrice}: {minPrice}");
+            break;
+
+        case "16":
+            Console.Write("Enter category id: ");
+            var categoryIdForMaxPrice = Convert.ToInt32(Console.ReadLine());
+            var maxPrice = productRepo.GetMaxPriceOfProductByCategory(categoryIdForMaxPrice);
+            Console.WriteLine($"Maximum price of products in category {categoryIdForMaxPrice}: {maxPrice}");
+            break;
+
+        case "17":
+            Console.Write("Enter category id: ");
+            var categoryIdForAveragePrice = Convert.ToInt32(Console.ReadLine());
+            var averagePrice = productRepo.GetAveragePriceOfProductByCategory(categoryIdForAveragePrice);
+            Console.WriteLine($"Average price of products in category {categoryIdForAveragePrice}: {averagePrice}");
+            break;
 
         case "0":
             System.Console.WriteLine("Exiting ...");

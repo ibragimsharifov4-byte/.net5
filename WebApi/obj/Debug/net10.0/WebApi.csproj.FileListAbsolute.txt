@@ -21,3 +21,5 @@ C:\Users\mardin it\OneDrive\Desktop\.net projects\week1\day5\WebApi\obj\Debug\ne
 C:\Users\mardin it\OneDrive\Desktop\.net projects\week1\day5\WebApi\obj\Debug\net10.0\WebApi.pdb
 C:\Users\mardin it\OneDrive\Desktop\.net projects\week1\day5\WebApi\obj\Debug\net10.0\WebApi.genruntimeconfig.cache
 C:\Users\mardin it\OneDrive\Desktop\.net projects\week1\day5\WebApi\obj\Debug\net10.0\ref\WebApi.dll
+C:\Users\mardin it\OneDrive\Desktop\.net projects\week1\day5\WebApi\bin\Debug\net10.0\Dapper.dll
+C:\Users\mardin it\OneDrive\Desktop\.net projects\week1\day5\WebApi\obj\Debug\net10.0\WebApi.sourcelink.json
