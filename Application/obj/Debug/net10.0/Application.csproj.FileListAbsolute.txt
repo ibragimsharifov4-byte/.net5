@@ -13,3 +13,4 @@ C:\Users\mardin it\OneDrive\Desktop\.net projects\week1\day5\Application\obj\Deb
 C:\Users\mardin it\OneDrive\Desktop\.net projects\week1\day5\Application\obj\Debug\net10.0\refint\Application.dll
 C:\Users\mardin it\OneDrive\Desktop\.net projects\week1\day5\Application\obj\Debug\net10.0\Application.pdb
 C:\Users\mardin it\OneDrive\Desktop\.net projects\week1\day5\Application\obj\Debug\net10.0\ref\Application.dll
+C:\Users\mardin it\OneDrive\Desktop\.net projects\week1\day5\Application\obj\Debug\net10.0\Application.sourcelink.json
